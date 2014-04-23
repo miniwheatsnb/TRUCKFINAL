@@ -15,7 +15,19 @@
     color: #F7A51E;
 }
 
+.container body-content h1{
+    color: #F7A51E;
+}
+
 a:link {
+    color: #F7A51E;
+}
+
+td {
+    color: #F7A51E;
+}
+
+.table {
     color: #F7A51E;
 }
 
@@ -71,7 +83,6 @@ input[type="checkbox"].input-validation-error {
 /* Changing the format of the bootstrap.css */
 .navbar-inverse 
     { 
-        color: yellow;
         background-color: #1C3C3B; 
         font-family: 'Varela Round', 'sans-serif';
         font-size: 18px;
