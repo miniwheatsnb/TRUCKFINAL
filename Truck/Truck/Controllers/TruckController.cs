@@ -18,6 +18,15 @@ namespace Truck.Controllers
         // GET: /Truck/
         public ActionResult Index()
         {
+            
+
+            //var trucks = from t in db.Trucks select t;
+
+            //if (!String.IsNullOrEmpty(searchString))
+            //{
+            //    trucks = trucks.Where(s => s.TruckName.Contains(searchString));
+            //}
+
             return View(db.Trucks.ToList());
             //List<Truck> ass = db.Trucks.ToList().Any(x=>x.ID.Equals())
         }

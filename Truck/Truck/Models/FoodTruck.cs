@@ -12,7 +12,7 @@ namespace Truck.Models
         public int ID { get; set; }
         
 
-        [Display(Name = "Truck Name")]
+        [Display(Name = "Truck Information")]
         public string TruckName { get; set; }
         public string Location { get; set; }
         public DateTime StartTime { get; set; }

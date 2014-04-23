@@ -6,6 +6,7 @@
 
 <p>
     <h1 style="color:#F7A51E">Current Truck List</h1>
+    
 </p>
 <table class="table">
     <tr>
@@ -21,10 +22,10 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            <b> @Html.DisplayFor(modelItem => item.TruckName)</b>
-                @Html.DisplayFor(modelItem => item.Location)
-            <b> @Html.DisplayFor(modelItem => item.ID) </b>
-                @Html.DisplayFor(modelItem => item.StartTime)
+            <b> @Html.DisplayFor(modelItem => item.TruckName)</b><br />
+                @Html.DisplayFor(modelItem => item.Location)<br />
+            <b> @Html.DisplayFor(modelItem => item.ID) </b><br />
+                @Html.DisplayFor(modelItem => item.StartTime)<br />
             <b> @Html.DisplayFor(modelItem => item.EndTime) </b>
         </td>
         <td>
