@@ -224,6 +224,10 @@ table {
   border-spacing: 0;
 }
 
+.jumbotron img {
+    align-content: center;
+}
+
 @media print {
   * {
     color: #000 !important;
