@@ -1,12 +1,28 @@
 ﻿body {
+    background-color: #1C3C3B;
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
+    background-color: #1C3C3B;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.col-md-4 {
+    color: #F7A51E;
+}
+
+a:link {
+    color: #F7A51E;
+}
+
+.footer {
+    text-align: center;
+    font-family: 'Varela Round', 'sans-serif';
+    font-size: 20px;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -41,11 +57,30 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
+.jumbotron h1{
+    color: #1C3C3B;
+    font-family: 'Varela Round', 'sans-serif';
+    font-size: 65px;
+    font-weight: bold;
+}
 
+.jumbotron {
+    background-color: white;
+}
 
 /* Changing the format of the bootstrap.css */
 .navbar-inverse 
     { 
-        background-color: #B2E6FF !important; 
-
+        color: yellow;
+        background-color: #1C3C3B; 
+        font-family: 'Varela Round', 'sans-serif';
+        font-size: 18px;
     }
+
+.navbar-inverse .navbar-brand {
+    color: #F7A51E;
+}
+
+.navbar-inverse a {
+    color: #F7A51E;
+}
