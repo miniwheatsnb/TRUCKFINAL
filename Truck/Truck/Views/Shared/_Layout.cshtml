@@ -23,8 +23,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" style="color:yellow;">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    @*<li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
                     <li>@Html.ActionLink("Truck", "Index", "Truck")</li>
                     <li>@Html.ActionLink("Admin", "Index", "Admin")</li>
                 </ul>
@@ -35,8 +35,13 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
+<<<<<<< HEAD
         <footer class="footer">
             <p>&copy; @DateTime.Now.Year - Benton, Bragg , Houze and Kay</p>
+=======
+        <footer>
+            <p>&copy; @DateTime.Now.Year - WhereTheTruck?</p>
+>>>>>>> ff47db947c3d02167954e3800286aab1c3bfca5f
         </footer>
     </div>
 
