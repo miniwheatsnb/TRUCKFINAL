@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Truck.Models;
+using GoogleAPI;
 
 namespace Truck.Controllers
 {
@@ -51,7 +52,15 @@ namespace Truck.Controllers
         {
             if (ModelState.IsValid)
             {
+                GeoResult result = GeoUtil.geoMapAddress(foodtruck.Location);
+                foodtruck.Location = result.results[0].formatted_address.ToString();
+                string lng = result.results[0].geometry.location.lng.ToString();
+                string lat = result.results[0].geometry.location.lat.ToString();
+
+                string mapURL = "http://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=15&size=800x800&sensor=false";
+                foodtruck.Map = mapURL;
                 db.Trucks.Add(foodtruck);
+
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
